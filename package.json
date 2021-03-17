@@ -1,0 +1,19 @@
+{
+  "name": "tuntikirjaus-mono",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "prestart": "lerna run build:lib --stream",
+    "start": "lerna run start --stream",
+    "pretest": "lerna run build:lib --stream",
+    "test": "lerna run test --stream",
+    "build:lib": "lerna run build:lib"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "typescript": "^4.2.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
